@@ -15,13 +15,146 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background: #80bfca;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+.tri-stage {
+  border-radius: 40px;
+  background: #ebebeb;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+}
+.toggle {
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+.visibleEl {
+  opacity: 1;
+}
+.hiddenEl {
+  opacity: 0;
+}
+main {
+  transition: 1s;
+}
+.wrapper {
+  background: #DAF0FF;
+}
+.remixWrapper {
+  background: #130017
+}
+.calc {
+  position: relative;
+  max-width: 375px;
+  width: 100%;
+  height: 660px;
+  margin: 30px 0 0 0;
+}
+.calcInterface {
+  max-width: 375px;
+  width: 100%;
+  height: 670px;
+  border-radius: 39px;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 40px 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(0,111,163,0.10127801120448177) 100%);
+}
+.calc-back {
+  position: absolute;
+  right: -120px;
+  top: 80px;
+  width: 100%;
+  height: 100%;
+  border-radius: 39px;
+  filter: blur(61.5px);
+  background: rgba(96, 190, 255, 0.55);
+}
+.calc__result {
+  margin: 138px 0 0 0;
+  
+}
+.calc__btns {
+  margin: 88px 0 0 0;
+  
+}
+/* #130017 background: #DAF0FF; */
