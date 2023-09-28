@@ -17,7 +17,7 @@ const calcSlice = createSlice({
             return;
          }
          state.activeMode++
-      }
+      },
    }
 })
 

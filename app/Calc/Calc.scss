@@ -27,16 +27,16 @@
 .btn__divisor {
    grid-area: c;
    border: 1px solid rgba(255, 255, 255, 0.39);
-background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
-box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
-color: rgba(0, 0, 0, 0.70);
+   background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
+   box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
+   color: rgba(0, 0, 0, 0.70);
 }
 .btn__multiplier {
    grid-area: d;
    border: 1px solid rgba(255, 255, 255, 0.39);
-background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
-box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
-color: rgba(0, 0, 0, 0.70);
+   background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
+   box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
+   color: rgba(0, 0, 0, 0.70);
 }
 .btn__seven {
    grid-area: e;
@@ -50,9 +50,9 @@ color: rgba(0, 0, 0, 0.70);
 .btn__minus {
    grid-area: h;
    border: 1px solid rgba(255, 255, 255, 0.39);
-background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
-box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
-color: rgba(0, 0, 0, 0.70);
+   background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
+   box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
+   color: rgba(0, 0, 0, 0.70);
 }
 .btn__four {
    grid-area: i;
@@ -66,9 +66,9 @@ color: rgba(0, 0, 0, 0.70);
 .btn__plus {
    grid-area: l;
    border: 1px solid rgba(255, 255, 255, 0.39);
-background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
-box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
-color: rgba(0, 0, 0, 0.70);
+   background: linear-gradient(204deg, #ADD8FF -8.99%, rgba(173, 216, 255, 0.28) 111.42%);
+   box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.43) inset;
+   color: rgba(0, 0, 0, 0.70);
 }
 .btn__one {
    grid-area: m;
@@ -90,4 +90,75 @@ color: rgba(0, 0, 0, 0.70);
 }
 .btn__dot {
    grid-area: r;
+}
+
+.btn__b__1 {
+   background: #616161;
+   border:  none;
+}
+.btn__b__2 {
+   background: #005DB2;
+   color: #339DFF;
+   border:  none;
+}
+.btn__b__3 {
+   background: #303136;
+   color: #339DFF;
+   border:  none;
+}
+.btn__r__1 {
+   background: #303136;
+   border:  none;
+}
+.btn__r__2 {
+   border:  none;
+   background: #8500ad;
+   color: #fff;
+
+}
+.btn__r__3 {
+   border:  none;
+   background: #303136;
+   color: #339DFF;
+}
+.calcInterface {
+      max-width: 375px;
+      width: 100%;
+      height: 670px;
+      border-radius: 39px;
+      position: relative;
+      z-index: 2;
+      background: #ffffff;
+      padding: 40px 30px;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(0,111,163,0.10127801120448177) 100%);
+      transition: 0.8s;
+}
+.calcInterface__b {
+   background: #17181A;
+   max-width: 375px;
+      width: 100%;
+      height: 670px;
+      border-radius: 39px;
+      position: relative;
+      z-index: 2;
+      padding: 40px 30px;
+      transition: 0.8s;
+}
+.calcInterface__r {
+   background: #17181A;
+   max-width: 375px;
+      width: 100%;
+      height: 670px;
+      border-radius: 39px;
+      position: relative;
+      z-index: 2;
+      padding: 40px 30px;
+      transition: 0.8s;
+}
+.btn__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.btn__img__b {
 }
