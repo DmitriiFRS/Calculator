@@ -131,7 +131,7 @@ function Buttons() {
          {buttons.map((el, index) => {
             return (
                <button onClick={e => setToInput(e)} key={index}
-               className={`overflow-hidden duration-500 rounded-2xl text-3xl text-slate-400 relative ${el.className}
+               className={`fkn__btns overflow-hidden duration-500 rounded-2xl text-3xl text-slate-400 relative ${el.className}
                ${mode === 1 ? el.classNameB : mode === 2 ? el.classNameR : ''} calc__btn`}>
                {el.name === remove ? <Image className={`${'btn__img'} ${mode === 1 ? 'btn__img__b' : mode === 2 ? 'btn__img__r' : ''}`}
                src={remove} alt='remove' fill={true} /> : el.name}
