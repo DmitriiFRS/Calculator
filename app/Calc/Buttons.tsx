@@ -1,8 +1,10 @@
 import remove from '../../public/remove.svg';
 import Image from 'next/image';
 import './Calc.scss'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../Redux/store';
+import { setInput1, setInput2 } from '../Redux/calcSlice';
+import { useEffect, useState } from 'react';
 
 const buttons = [{
    name: 'Ac', 
@@ -114,14 +116,25 @@ const buttons = [{
 }]
 
 function Buttons() {
+   const [test, setTest] = useState('')
+   const dispatch = useDispatch()
    const mode = useSelector((state: RootState) => state.calcReducer.activeMode);
+   const result = useSelector((state: RootState) => state.calcReducer.input2);
+   function setToInput(e: any) {
+      const value = e.target.innerHTML
+      setTest(e.target.text)
+      dispatch(setInput1(value))
+   }
    return (
    <div className="calc__btns">
       <div className="calc__main grid gap-2.5">
          {buttons.map((el, index) => {
             return (
-               <button key={index} className={`overflow-hidden duration-500 rounded-2xl text-3xl text-slate-400 relative ${el.className} ${mode === 1 ? el.classNameB : mode === 2 ? el.classNameR : ''} calc__btn`}>
-               {el.name === remove ? <Image className={`${'btn__img'} ${mode === 1 ? 'btn__img__b' : mode === 2 ? 'btn__img__r' : ''}`} src={remove} alt='remove' fill={true} /> : el.name}
+               <button onClick={e => setToInput(e)} key={index}
+               className={`overflow-hidden duration-500 rounded-2xl text-3xl text-slate-400 relative ${el.className}
+               ${mode === 1 ? el.classNameB : mode === 2 ? el.classNameR : ''} calc__btn`}>
+               {el.name === remove ? <Image className={`${'btn__img'} ${mode === 1 ? 'btn__img__b' : mode === 2 ? 'btn__img__r' : ''}`}
+               src={remove} alt='remove' fill={true} /> : el.name}
                </button>
             )
          })}

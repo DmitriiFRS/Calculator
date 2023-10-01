@@ -13,7 +13,7 @@ return (
          <Result />
          <Buttons />
       </div>
-      <div className="calc-back z-1"></div>
+      <div className={`calc-back z-1 ${mode === 2 ? 'calc-back-3' : ''}`}></div>
    </section>
 )
 }

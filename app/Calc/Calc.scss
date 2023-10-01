@@ -16,6 +16,11 @@
    min-width: 62px;
    min-height: 62px;
    color: #cfcfcf;
+   transition: 0.3s;
+   &:hover {
+      background: #707070;
+      box-shadow: 0px 5px 23px 0px rgba(0, 163, 255, 0.65), -3px 4px 11px 0px #B0DFFF inset;
+   }
  }
 
 .btn__Ac {
@@ -82,7 +87,6 @@
 .btn__equal {
    grid-area: p;
    background: #19ACFF;
-   box-shadow: 0px 5px 23px 0px rgba(0, 163, 255, 0.65), -3px 4px 11px 0px #B0DFFF inset;
    border: none;
 }
 .btn__zero {
@@ -100,6 +104,9 @@
    background: #005DB2;
    color: #339DFF;
    border:  none;
+   &:hover {
+      background: #303136;
+   }
 }
 .btn__b__3 {
    background: #303136;
@@ -114,12 +121,19 @@
    border:  none;
    background: #8500ad;
    color: #fff;
+   &:hover {
+      background: #000;
+   }
 
 }
 .btn__r__3 {
    border:  none;
    background: #303136;
    color: #339DFF;
+   &:hover {
+      background: #008fd1;
+      box-shadow: 0px 5px 23px 0px rgba(138, 0, 192, 0.85), -3px 4px 11px 0px #b6b6b6 inset;
+   }
 }
 .calcInterface {
       max-width: 375px;
@@ -161,4 +175,43 @@
    object-fit: cover;
 }
 .btn__img__b {
+}
+.calc-back {
+   position: absolute;
+   right: -120px;
+   top: 80px;
+   width: 100%;
+   height: 100%;
+   border-radius: 39px;
+   filter: blur(61.5px);
+   background: rgba(96, 190, 255, 0.55);
+ }
+.calc-back-3 {
+   top: -50px;
+   right: 0px;
+   height: 120%;
+   width: 50%;
+   filter: blur(61.5px);
+}
+.calc-back-3-body {
+   width: 100%;
+   height: 100%;
+}
+.calc__result {
+   font-size: 25px;
+   color: #777777;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin: 30px 0 0 0;
+}
+.calc__input-1 {
+   text-align: end;
+   background: inherit;
+   cursor: default;
+}
+.calc__input-2 {
+   text-align: end;
+   background: inherit;
+   cursor: default;
 }
