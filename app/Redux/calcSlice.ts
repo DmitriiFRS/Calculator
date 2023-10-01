@@ -14,11 +14,6 @@ const initialState: initialStateType = {
    operators: ['/', '*', '+', '-'],
    flag: false
 }
-function calculate(a: number, b: number, c: string) {
-   
-}
-
-
 const calcSlice = createSlice({
    name: 'calc',
    initialState,
@@ -51,6 +46,9 @@ const calcSlice = createSlice({
          }
          else if (state.input1 === '0' && action.payload !== '.') {
             state.input1 = action.payload
+         }
+         else if (state.operators.includes(state.input1[state.input1.length - 1]) && action.payload === '=') {
+            return
          }
          else if (action.payload === '=' && state.flag) {
             if (state.input1.includes('.')) {
